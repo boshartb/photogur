@@ -4,6 +4,7 @@
 # end
 
 Rails.application.routes.draw do
+  root 'pictures#index'
   get 'pictures' => 'pictures#index'
 
   post 'pictures' => 'pictures#create' # this is a new line of code
@@ -11,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'pictures/:id' => 'pictures#show'
 end
+
+
   # Ignore the comments below for now
   # They are just documentation
 
